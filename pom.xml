@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.stackroute.domain</groupId>
-    <artifactId>spring-core-xml-tasks</artifactId>
+    <artifactId>Spring-core-xml-tasks</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>Spring-core-xml-tasks</name>
