@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringExample" />
+        <module name="spring-core-xml-tasks" />
       </profile>
     </annotationProcessing>
   </component>

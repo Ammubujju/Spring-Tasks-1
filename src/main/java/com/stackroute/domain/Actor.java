@@ -6,6 +6,12 @@ import java.util.*;
 
 public class Actor
 {
+    /*Declaring appropraite varaibles*/
+    private String name;
+    private String gender;
+    private int age;
+
+    /*using Getter methods*/
     public String getName() {
         return name;
     }
@@ -18,10 +24,8 @@ public class Actor
         return age;
     }
 
-    private String name;
-    private String gender;
-    private int age;
 
+    /*using setter methods*/
     public void setName(String name) {
         this.name = name;
     }
