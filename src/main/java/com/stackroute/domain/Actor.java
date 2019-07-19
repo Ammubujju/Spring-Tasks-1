@@ -2,10 +2,11 @@ package com.stackroute.domain;
 
 public class Actor
 {
-    // Declaration
+    // Declaration of varaibles
     private String name,gender;
     private int age;
 
+    //assigning the current variables
     public Actor(String name, String gender, int age)
     {
         this.name = name;
@@ -16,7 +17,7 @@ public class Actor
     {
 
     }
-
+     //using getter methods
     public String getName()
     {
         return name;
@@ -32,6 +33,7 @@ public class Actor
         return age;
     }
 
+    //using setter methods
     public void setName(String name) {
         this.name = name;
     }

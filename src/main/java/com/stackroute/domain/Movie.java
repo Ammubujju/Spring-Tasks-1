@@ -10,9 +10,10 @@ import org.springframework.context.ApplicationContextAware;
 
 public class Movie
 {
+    //creating the object for Actor class
     private Actor actor;
 
-
+     //Assinging actor variable
     public Movie(Actor actor)
     {
         this.actor = actor;
@@ -27,6 +28,8 @@ public class Movie
 
     }
 
+
+    //displaying the information of Actor class
     public void display()
     {
         System.out.println("The actor information : " +actor.getName()+"  "+actor.getGender() +"   "+actor.getAge());

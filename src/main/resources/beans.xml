@@ -4,13 +4,20 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+    <!-- A bean defining with id,class -->
+
     <bean id="movie" class="com.stackroute.domain.Movie" scope="prototype" autowire="byName"/>
+
+    <!-- collaborators and configuration for this bean  -->
 
     <bean id="actor" class="com.stackroute.domain.Actor">
         <property name="name" value="Sunitha"></property>
         <property name="gender" value="Female"></property>
         <property name="age" value="35"></property>
     </bean>
+
+    <!-- A bean defining with id,class -->
 
     <bean id="movie1" class="com.stackroute.domain.Movie" scope="prototype" autowire="constructor"/>
 
