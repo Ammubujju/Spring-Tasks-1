@@ -6,13 +6,20 @@
 
     <bean id="movie" class="com.stackroute.domain.Movie" scope="prototype" autowire="byName"/>
 
+    <!-- A bean defining with id,class -->
+
     <bean id="actor" class="com.stackroute.domain.Actor">
+
+        <!-- collaborators and configuration for this bean -->
+
         <property name="name" value="Sunitha"></property>
         <property name="gender" value="Female"></property>
         <property name="age" value="35"></property>
     </bean>
 
     <bean id="movie1" class="com.stackroute.domain.Movie" scope="prototype" autowire="constructor"/>
+
+    <!-- A bean defining with id,class -->
 
     <bean id="Actor" class="com.stackroute.domain.Actor">
         <property name="name" value="Sunitha"></property>
