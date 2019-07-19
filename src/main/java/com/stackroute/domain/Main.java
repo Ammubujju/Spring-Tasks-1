@@ -13,8 +13,14 @@ import org.springframework.core.io.FileSystemResource;
 import java.security.cert.X509Certificate;
 
 public class Main {
+
     public static void main(String[] args) {
+
+        /*ApplicationContext provides configuration to the application*/
+
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+
+
 
         Movie movieobj = context.getBean("MovieA", Movie.class);
         movieobj.display();
@@ -34,6 +40,7 @@ public class Main {
         Movie movieobjF = context.getBean("MovieF", Movie.class);
         movieobjF.display();
 
+        /*testing the bean scope using prototype*/
         Movie movieobj4 = context.getBean("MovieF", Movie.class);
         System.out.println(movieobj4 == movieobjF);
     }

@@ -5,23 +5,29 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!-- A bean defining with id,class and scope -->
     <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" scope="prototype" >
         <constructor-arg name="actor" ref="actorObj1"></constructor-arg>
     </bean>
 
+    <!-- A bean defining with id,class and scope -->
     <bean name="MovieC,MovieD" class="com.stackroute.domain.Movie" scope="prototype" >
         <constructor-arg name="actor" ref="actorObj2"></constructor-arg>
     </bean>
 
+    <!-- A bean defining with id,class and scope -->
     <bean name="MovieE,MovieF" class="com.stackroute.domain.Movie" scope="prototype" >
         <constructor-arg name="actor" ref="actorObj3"></constructor-arg>
     </bean>
 
+    <!-- set the property values through constructor injection. -->
     <bean id="actorObj1" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="suma" type="String"></constructor-arg>
         <constructor-arg name="gender" value="female" type="String"></constructor-arg>
         <constructor-arg name="age" value="24" type="int"></constructor-arg>
     </bean>
+
+    <!-- set the property values through constructor injection. -->
 
     <bean id="actorObj2" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="trisha" type="String"></constructor-arg>
@@ -29,6 +35,7 @@
         <constructor-arg name="age" value="24" type="int"></constructor-arg>
     </bean>
 
+    <!-- set the property values through constructor injection. -->
 
     <bean id="actorObj3" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="keerthi" type="String"></constructor-arg>
